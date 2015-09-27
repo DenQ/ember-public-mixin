@@ -1,6 +1,6 @@
 {
   "name": "ember-public-mixin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Shared your code public methods and property",
   "directories": {
     "doc": "doc",
@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/DenQ/ember-public-mixin",
   "engines": {
     "node": ">= 0.10.0"
   },
