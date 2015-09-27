@@ -1,7 +1,7 @@
 {
   "name": "ember-public-mixin",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Shared your code public methods and property",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,7 +15,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "DenQ",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
@@ -38,7 +38,10 @@
     "ember-try": "0.0.6"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "mixin",
+    "public methods",
+    "shared methods"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.3"
