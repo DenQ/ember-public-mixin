@@ -8,18 +8,28 @@ This README outlines the details of collaborating on this Ember addon.
 * `npm install`
 * `bower install`
 
-## Running
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+## Usage
 
-## Running Tests
-
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+    `import Ember from 'ember'`
+    `import PublicMixin from '../mixins/public'`
+    
+    IndexController = Ember.Controller.extend PublicMixin,
+      zoo: 111
+      Baz:->
+        console.log 'Baz'
+        return
+    
+      init:(etc...)->
+        @_super etc
+        @signal 'Foo'
+        return
+    
+      'public':
+        Foo:->
+          @Baz()
+          console.log 'public.Foo'
+          return
+    
+    `export default IndexController`
+  
