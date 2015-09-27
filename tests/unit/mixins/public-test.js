@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import PublicMixin from 'ember-public-mixin/mixins/public';
+import PublicMixin from '../../../mixins/public';
 import { module, test } from 'qunit';
 
 module('Unit | Mixin | public');
