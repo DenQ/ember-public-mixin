@@ -24,8 +24,7 @@ export default Ember.Mixin.create({
       return null;
     }
     if (Ember.typeOf(method) === 'function') {
-      method = method.bind(this);
-      return method(params);
+      return method.apply(this, params);
     } else {
       return method;
     }
