@@ -1,6 +1,6 @@
 {
   "name": "ember-public-mixin",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Shared your code public methods and property",
   "directories": {
     "doc": "doc",
