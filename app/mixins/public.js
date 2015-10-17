@@ -28,6 +28,15 @@ export default Ember.Mixin.create({
     } else {
       return method;
     }
-  }
+  },
+
+  SharedPublic: function() {
+    var listeners = this.get('public');
+    var key, val;
+    for (key in listeners) {
+      val = listeners[key];
+      this.set(key, val);
+    }
+  }.on('init')
 
 });
